@@ -1,5 +1,33 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus nec tellus quis sagittis. Sed vehicula turpis quis dolor consequat euismod. Aenean tristique lacus a ante cursus venenatis. Phasellus commodo sapien vitae lorem posuere viverra. Morbi hendrerit purus vitae arcu laoreet, nec dignissim nulla luctus. Nulla scelerisque, ante eu suscipit tristique, leo mi sagittis dolor, vestibulum suscipit ligula turpis quis mauris. Morbi at massa ac risus sodales vestibulum vitae sit amet tortor.
+Inactive Key No Rotation
+[[level - link to page with explanation for syslog levels]]
+User has inactive keys that have not been rotated in the last 90 days.
 
-Mauris dignissim odio nisl, sit amet viverra sapien mollis non. Phasellus non dictum metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque, nisi sit amet rhoncus consectetur, purus leo malesuada dolor, et fringilla erat mi nec lectus. Aenean vel porta purus. Pellentesque ultrices dui nec magna convallis, non consectetur odio pulvinar. Cras bibendum, turpis eu tempus ornare, tortor velit ornare elit, in venenatis urna diam nec mi. Praesent blandit tempor augue, vel pharetra ipsum rhoncus ut. In egestas malesuada neque.
+[[horizontal rule]]
 
-Cras facilisis neque aliquet hendrerit imperdiet. Vivamus euismod urna ex, ut varius ante varius vel. Praesent tincidunt consectetur dolor sed placerat. Aenean dignissim elit non urna dictum interdum. Pellentesque et ullamcorper orci, sit amet semper urna. Integer blandit dictum est a facilisis. Cras consequat malesuada dolor, vel rutrum ipsum ultrices ut.
+Why It’s an Issue
+Inactive Key Best Practices
+- Insert Inactive Key Best Practices introduction here
+
+Recommended Action
+Rotate or delete the inactive the keypairs.
+
+Rotating Access Keys
+As a security best practice, we recommend that you, an administrator, regularly rotate (change) the access keys for IAM users in your account. If your users have the necessary permissions, they can rotate their own access keys. For information about how to give your users permissions to rotate their own access keys, see Allow Users to Manage Their Own Passwords, Access Keys, and SSH Keys.
+
+Additional Information
+Password Policy
+You can also apply a password policy to your account to require that all of your IAM users periodically rotate their passwords,. You can choose how often they must do so. For more information, see Setting an Account Password Policy for IAM Users.
+
+AWS Root Account Credentials
+If you regularly use the AWS root account credentials, we recommend that you also regularly rotate them. The account password policy does not apply to the AWS root account credentials. IAM users cannot manage credentials for the AWS root account, so you must use the AWS root account's credentials (not a user's) to change the AWS root account credentials. Note that we recommend against using the AWS root account for everyday work in AWS.”
+http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_RotateAccessKey
+
+How to Rotate Access Keys for IAM users
+https://blogs.aws.amazon.com/security/post/Tx15CIT22V4J8RP/How-to-rotate-access-keys-for-IAM-users
+
+Key Length Guidelines
+The National Institute of Standards and Technology provides definitions of appropriate key lengths and provides guidelines for how long keys should be used.
+http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-57pt1r4.pdf
+
+How to Identify When an Access Key Was Last Used
+https://blogs.aws.amazon.com/security/post/Tx1GZCHQC7LR3UT/New-in-IAM-Quickly-Identify-When-an-Access-Key-Was-Last-Used
